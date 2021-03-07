@@ -12,5 +12,4 @@ RUN sed -i 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid
 ENV NOTVISIBLE="in users profile"
 RUN echo "export VISIBLE=now" >> /etc/profile
 
-aaaaa
 CMD ["/usr/sbin/sshd", "-D"]
